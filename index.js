@@ -7,3 +7,10 @@
 */
 
 console.log("Hello World");
+
+console.log(process.argv);
+
+//console.log(`Hello ${process.argv[2]}`);
+
+const myWord = process.argv[2] || 'guest';
+console.log(`Hello ${myWord}`);
